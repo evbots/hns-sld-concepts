@@ -14,8 +14,8 @@ There are many ways to modify this scheme, but that is the basic gist.
 ### Potential Problems with ChainLink
 
 There are two models for ChainLink nodes to report values:
-DDM (decentralized data model) - nodes report data on-chain and a smart contract aggregates results and reports a single value.
-OCR (off-chain reporting protocol) - nodes p2p aggregate values and report a single value on-chain.
+- DDM (decentralized data model) - nodes report data on-chain and a smart contract aggregates results and reports a single value.
+- OCR (off-chain reporting protocol) - nodes p2p aggregate values and report a single value on-chain.
 
 DDM is currently open source and available for others to copy and use. OCR is not open source and is only used by chainlinik data feeds so far. Right now, the only thing stopping a ChainLink node from reporting bad data into a custom SLD contract is their reputation.
 
