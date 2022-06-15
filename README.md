@@ -44,14 +44,14 @@ In order to build this, you could modify the transfer method to fail if a vote h
 You could also extend this to other standards such as the Consumable Extension (EIP-4400). changeConsumer could not be called according to the same rules as transfer, identified above.
 
 
-### Benefits to this proposal
+#### Benefits to this proposal
 
 - SLD owners can still have liquidity, aka approving listings to opensea, while still accruing voting rights in their SLDs.
 - Any transfer associated with a sale of the domain (such as a sale on OpenSea), the voting eligibility clock will automatically reset.
 - You have to lock up capital for some time period. This means that there is a real opportunity cost to attacking the protocol.
 
 
-### Problems with this proposal
+#### Problems with this proposal
 
 - Account abstraction is still a big problem here: users can create synthetic contracts, such as their own NFT contract, and transfer ownership of the SLD into that contract, and then mint synthetic NFTs and trade those on other markets. This would effectively side-step the voting protections. In general, I think that this is a bit far fetched, but could become a legitimate problem if the protocol grows in popularity (over 100k registrations).
 - Any transfer of the SLD will reset the clock on if that SLD is eligible to vote. There are many legitimate reasons that a user would want to transfer ownership of an SLD between their own addresses, so this is a problem.
